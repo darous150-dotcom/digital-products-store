@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaKit | Produits Digitaux</title>
+    <meta
+      name="description"
+      content="NovaKit propose des produits numériques premium, templates, packs, cours et outils pour accélérer votre business digital."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="NovaKit home">
+          <div class="brand-mark">N</div>
+          <span>NovaKit</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="#catalogue">Catalogue</a>
+          <a href="#avantages">Avantages</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary" type="button">Connexion</button>
+          <button class="cart-btn" id="openCartBtn" type="button" aria-label="Ouvrir le panier">
+            Panier
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">✦ Plus de 18 000 clients satisfaits</div>
+            <h1>Des <span class="gradient-text">produits digitaux</span> qui font vendre.</h1>
+            <p>
+              Accédez à des templates, cours, outils, ressources créatives et packs premium pensés pour accélérer votre business en ligne sans repartir de zéro.
+            </p>
+
+            <div class="cta-row">
+              <a href="#catalogue" class="btn btn-primary">Découvrir les produits</a>
+              <a href="#avantages" class="btn btn-secondary">Voir les avantages</a>
+            </div>
+
+            <div class="rating-strip" aria-label="Note et statistiques">
+              <div><span class="stars">★★★★★</span> 4.9/5</div>
+              <div>• 2 400 avis</div>
+              <div>• Livraison instantanée</div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Aperçu de produits">
+            <div class="mockup">
+              <div class="mini-header">
+                <span>Marketplace digital</span>
+                <div class="dots" aria-hidden="true">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+
+              <div class="product-showcase">
+                <div class="showcase-top">
+                  <span>Top ventes</span>
+                  <span>+127%</span>
+                </div>
+
+                <div class="showcase-visual">
+                  <div class="card-mini">
+                    <span class="badge">Pack Pro</span>
+                    <div class="price-tag">89€</div>
+                  </div>
+
+                  <div class="card-mini">
+                    <span class="badge">Template</span>
+                    <div class="price-tag">49€</div>
+                  </div>
+                </div>
+
+                <div class="stats-bar">
+                  <div class="stat">
+                    <strong>24k</strong>
+                    <span>Downloads</span>
+                  </div>
+                  <div class="stat">
+                    <strong>96%</strong>
+                    <span>Satisfaction</span>
+                  </div>
+                  <div class="stat">
+                    <strong>1 min</strong>
+                    <span>Livraison</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="catalogue">
+        <div class="container">
+          <div class="section-head">
+            <h2>Produits populaires</h2>
+            <p>Des ressources premium prêtes à l’emploi pour les créatifs, marketeurs, freelances et entrepreneurs digitaux.</p>
+          </div>
+
+          <div class="filter-bar" aria-label="Filtres de produits">
+            <button class="chip active" type="button">Tous</button>
+            <button class="chip" type="button">Templates</button>
+            <button class="chip" type="button">Cours</button>
+            <button class="chip" type="button">Outils</button>
+            <button class="chip" type="button">Bundles</button>
+          </div>
+
+          <div class="products" id="productsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section showcase-section" id="avantages">
+        <div class="container">
+          <div class="section-head">
+            <h2>Pense pour les créateurs digitaux</h2>
+            <p>Un accès simple, rapide et fiable pour vendre, apprendre et automatiser votre présence en ligne.</p>
+          </div>
+
+          <div class="features">
+            <article class="feature">
+              <div class="icon">⚡</div>
+              <h3>Livraison instantanée</h3>
+              <p>Le téléchargement est immédiat après paiement, sans attente ni friction pour votre client.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon">🔒</div>
+              <h3>Paiement sécurisé</h3>
+              <p>Support des cartes, Stripe et méthodes modernes de paiement avec protection premium.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon">📈</div>
+              <h3>Conversion optimisée</h3>
+              <p>Design premium, offres pensées pour augmenter les achats et la confiance de vos visiteurs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tarifs">
+        <div class="container">
+          <div class="section-head">
+            <h2>Des offres pensées pour tous</h2>
+            <p>Que vous soyez solo, freelance ou une petite équipe, choisissez le pack qui correspond à votre rythme de vente.</p>
+          </div>
+
+          <div class="products">
+            <article class="product">
+              <div class="thumb">🎯</div>
+              <div class="product-body">
+                <div class="meta">
+                  <span class="tag">Starter</span>
+                  <span>1x</span>
+                </div>
+                <h3>Pack Starter</h3>
+                <p>Pour commencer à vendre des ressources numériques sans complications ni budget élevé.</p>
+                <div class="product-footer">
+                  <div class="price">19€</div>
+                  <button class="buy-btn add-to-cart" type="button" data-id="starter">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product">
+              <div class="thumb">🚀</div>
+              <div class="product-body">
+                <div class="meta">
+                  <span class="tag">Business</span>
+                  <span>Populaire</span>
+                </div>
+                <h3>Pack Business</h3>
+                <p>Pour les créateurs qui ont besoin d’outils, ressources et templates pour lancer plus vite.</p>
+                <div class="product-footer">
+                  <div class="price">49€</div>
+                  <button class="buy-btn add-to-cart" type="button" data-id="business">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product">
+              <div class="thumb">💎</div>
+              <div class="product-body">
+                <div class="meta">
+                  <span class="tag">Pro</span>
+                  <span>Premium</span>
+                </div>
+                <h3>Pack Pro</h3>
+                <p>Accès illimité à un ensemble premium de packs, outils et ressources pour maximiser vos ventes.</p>
+                <div class="product-footer">
+                  <div class="price">99€</div>
+                  <button class="buy-btn add-to-cart" type="button" data-id="pro">Ajouter</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <h2>Questions fréquentes</h2>
+            <p>Tout ce que vous devez savoir avant d’acheter vos premiers produits digitaux.</p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>Quand reçoivent mes fichiers ?</h3>
+              <p>Immédiatement après confirmation du paiement, le téléchargement est disponible dans votre espace client.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Les produits sont-ils utilisables commercialement ?</h3>
+              <p>Oui, la grande majorité des packs incluent une licence d’usage personnelle et commerciale selon les conditions de chaque fichier.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Proposez-vous un support ?</h3>
+              <p>Oui, notre équipe répond sous 24h à vos questions sur l’utilisation ou l’intégration des produits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 NovaKit — Produits Digitaux</div>
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">CGV</a>
+          <a href="#">Support</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Panier d’achats">
+      <div class="cart-header">
+        <h3>Votre panier</h3>
+        <button class="close-cart" id="closeCartBtn" type="button" aria-label="Fermer le panier">×</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <div class="empty">Aucun produit dans le panier.</div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Sous-total</span>
+          <span id="subtotal">0,00 €</span>
+        </div>
+        <div class="summary-row">
+          <span>Livraison</span>
+          <span>0,00 €</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="totalPrice">0,00 €</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" type="button">Passer la commande</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
